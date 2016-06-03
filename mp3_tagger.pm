@@ -13,6 +13,7 @@ Author  : <YOUR_NAME_HERE>
 use lib qw(. .. lib /tools/lib2); 
 use strict;
 use misc;
+use appMgr;
 use Mouse;
 use Mouse::Util::TypeConstraints;
 

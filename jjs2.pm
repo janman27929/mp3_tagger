@@ -7,15 +7,15 @@ use warnings;
 use misc;
 
 #---------[ CLASS Variables  ]------------
-# %s/jjs2/jjs2/g
-# sav jjs2.pm
 
-#---------[ CLASS Variables  ]------------
+#---------[ Modulino  ]------------
 my %hDefaults = (
 	debug => 1,
 );
 
 __PACKAGE__->new(
+	junk1 => 'this is junk1',
+	junk2 => 'this is junk2',
 )->_run unless caller;
 
 sub _run { 
@@ -32,7 +32,6 @@ sub _run {
 }
 
 
-#---------[ CLASS Variables  ]------------
 
 #---------[ PUBLIC METHODS ]------------
 sub new { 

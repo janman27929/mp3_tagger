@@ -26,7 +26,14 @@ my %hParms = (
 	t1			=> ['t1=s'	],		# no default
 );
 
-my $cUsage = "this is test usage";
+my $cUsage=<<'C_USAGE'; 
+inDir 	't/'
+inFile 	'sa28'
+outDir 	't/'
+outFile 'sa28.csv'
+t1      <NO DEFAULT>
+C_USAGE
+
 
 __PACKAGE__->new(
 	parms 		=> \%hParms,
@@ -113,11 +120,9 @@ sub getOptions  {
 
 sub prnParms { 
 	my $self = shift;	
-	$DB::single = 1; 
-	for (keys %{$self->{hParms}{parms}}) {
-		print "$_: ", $self->{$_}, "\n";
+	for (sort keys %{$self->{hParms}{parms}}) {
+		printf ("%-20s%-s\n", $_, $self->{$_});
 	}
-	$DB::single = 1; 
 }
 
 

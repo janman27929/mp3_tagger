@@ -10,10 +10,9 @@ Author  : <YOUR_NAME_HERE>
 =cut
 
 
-use lib qw(. .. lib /tools/lib2); 
+use lib qw(. .. /tools/lib2); 
 use strict;
 use warnings;
-use Getopt::Long;
 use Test::More;
 use Test::Exception;
 use base qw(Test::Class);

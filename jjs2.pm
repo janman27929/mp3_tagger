@@ -54,6 +54,15 @@ sub setup {
 	return $nRtn;
 }
 
+sub helloWorld { 
+	my $self = shift;	
+	my $nRtn = 0;
+	print "Good Morning World\n";
+	return $nRtn;
+}
+
+
+
 sub main { 
 	my $self = shift;	
 	my $nRtn = 0;

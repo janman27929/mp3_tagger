@@ -57,7 +57,7 @@ sub setup {
 sub helloWorld { 
 	my $self = shift;	
 	my $nRtn = 0;
-	print "Good Morning World\n";
+	print "Good Day World\n";
 	return $nRtn;
 }
 

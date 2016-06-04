@@ -1,4 +1,4 @@
-package jjs1;
+package jjs2;
 
 use lib qw(. .. lib /tools/lib2);
 
@@ -7,8 +7,8 @@ use warnings;
 use misc;
 
 #---------[ CLASS Variables  ]------------
-# %s/jjs1/jjs1/g
-# sav jjs1.pm
+# %s/jjs2/jjs2/g
+# sav jjs2.pm
 
 #---------[ CLASS Variables  ]------------
 my %hDefaults = (

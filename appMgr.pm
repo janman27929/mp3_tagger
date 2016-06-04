@@ -51,10 +51,9 @@ sub chkParms {
 	my $self = shift;
 	my @aErrs;
 
-	$DB::single = 1; 
 	push @aErrs, sprintf ("inFile not defined"	, $self->{inFile}) 	unless defined $self->{inFile}; 
 	push @aErrs, sprintf ("outFile not defined"	, $self->{outFile}) unless defined $self->{outFile}; 
-	push @aErrs, sprintf ("t1 not defined"	, $self->{t1}) unless defined $self->{t1}; 
+	push @aErrs, sprintf ("t1 not defined"			, $self->{t1}) unless defined $self->{t1}; 
 
 	return \@aErrs;	
 }
@@ -66,8 +65,8 @@ sub setup {
 sub main  {
 	my ($self, )  = @_;
 	$self->getOptions();
-	$self->validate();
 	$self->prnParms();
+	$self->validate();
 }
 
 sub teardown {

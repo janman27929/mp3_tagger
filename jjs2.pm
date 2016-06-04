@@ -51,6 +51,7 @@ sub new {
 sub setup { 
 	my $self = shift;	
 	my $nRtn = 0;
+	$self->helloWorld();
 	return $nRtn;
 }
 
